@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+## Clone the repository
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `git clone https://github.com/gowtham25/star-war.git`
+### `cd star-war`
 
+## Install dependencies
+### `npm install` or `yarn install`
 ## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Start the development server
+### `npm start` or `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠️ Available Scripts
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm start` — Runs the app in development mode.
+### `npm run build` — Builds the app for production.
+### `npm run test` — Launches the test runner.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If this project were the foundation for a much larger application with multiple teams contributing, I would definitely adjust my approach to prioritize scalability, collaboration, and maintainability. Some key changes would be:
 
-### `npm run build`
+## Stronger project structure:
+I would modularize the codebase further, clearly separating concerns (e.g., features, components, services, utilities) so that teams can work independently without stepping on each other’s toes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Strict coding standards:
+I would enforce consistent patterns through linting, formatting (like Prettier + ESLint), and well-defined code conventions to make sure all code looks and feels consistent, regardless of who writes it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Scalable state management:
+I would likely move to a more robust global state solution (e.g., Redux, Zustand, or React Query depending on needs), with well-isolated slices so multiple teams can manage parts of the state without tight coupling.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Reusable component library:
+Build or organize a design system (or shared UI library) so teams can reuse components rather than rebuild similar pieces differently.
 
-### `npm run eject`
+## Testing and CI/CD:
+I'd push for strong unit, integration, and e2e testing practices and set up automated CI pipelines to catch issues early and maintain high code quality across teams.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Documentation-first mindset:
+Good README files, API contracts, architectural decision records, and component documentation (maybe using Storybook) become critical so every team member can onboard quickly and contribute efficiently.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Versioning and communication between teams:
+If multiple teams are working on shared pieces, I’d also introduce API versioning, feature flags, and clear ownership of different modules.
